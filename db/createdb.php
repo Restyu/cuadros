@@ -14,7 +14,6 @@ try{
 		tecnica				VARCHAR(255) NOT NULL,
 		soporte				VARCHAR(255) NOT NULL,
 		dimension			VARCHAR(255) NOT NULL,
-		descripcion			VARCHAR(255) NOT NULL,
 		nacionalidad		VARCHAR(255) NOT NULL,
 		puntuacion   		ENUM('1','2','3','4','5') NOT NULL DEFAULT '1',
 		picturecreate		TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

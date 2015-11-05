@@ -2,10 +2,25 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>App Web cuadros</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+	<title>APLICACION WEB</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
 </head>
 <body>
-	<h1>Cuadros</h1>
+
+	<section class="inicio">
+		<h1>cuadros</h1>
+		<div class="enlaces">
+			<a class="enlace btn btn-default" href="<?=$base_url?>/picture-add" role="button">añadir nuevo cuadro</a>
+			<a class="enlace btn btn-default" href="<?=$base_url?>/picture-list" role="button">ver lista cuadros</a>
+			<a class="enlace btn btn-default" href="<?=$base_url?>/picture-delete" role="button">cuadros eliminados</a>
+		</div>
+	</section>
+
+	<footer>
+		aplicacion web sobre cuadros - 2015
+	</footer>
 </body>
 </html>
+
