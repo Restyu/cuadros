@@ -30,6 +30,7 @@
 						</thead>
 
 						<tbody>
+
 							<?php foreach($cuadros as $cad): ?>
 
 							<th><?=$cad['pintor']?></th>
@@ -42,7 +43,9 @@
 							<th><?=$cad['tema']?></th>
 							<th><?=$cad['nacionalidad']?></th>
 							<tr>
+
 							<?php endforeach; ?>
+							
 						</tbody>
 
 					</table>
@@ -92,19 +95,19 @@
 				</div>
 				
 				<div class="b">
-						<div class="a">
+					<div class="a">
 						<select class="form-control" name="puntuacion">
-					    <option>Estrellas</option>
-						<option value="1" <?php if ( isset($nivel) && $nivel == 1) echo 'selected'; ?>>&#9733</option>
-						<option value="2" <?php if ( isset($nivel) && $nivel == 2) echo 'selected'; ?>>&#9733&#9733</option>
-						<option value="3" <?php if ( isset($nivel) && $nivel == 3) echo 'selected'; ?>>&#9733&#9733&#9733</option>
-						<option value="4" <?php if ( isset($nivel) && $nivel == 4) echo 'selected'; ?>>&#9733&#9733&#9733&#9733</option>
-						<option value="5" <?php if ( isset($nivel) && $nivel == 5) echo 'selected'; ?>>&#9733&#9733&#9733&#9733&#9733</option>
+						    <option>Estrellas</option>
+							<option value="1" <?php if ( isset($nivel) && $nivel == 1) echo 'selected'; ?>>&#9733</option>
+							<option value="2" <?php if ( isset($nivel) && $nivel == 2) echo 'selected'; ?>>&#9733&#9733</option>
+							<option value="3" <?php if ( isset($nivel) && $nivel == 3) echo 'selected'; ?>>&#9733&#9733&#9733</option>
+							<option value="4" <?php if ( isset($nivel) && $nivel == 4) echo 'selected'; ?>>&#9733&#9733&#9733&#9733</option>
+							<option value="5" <?php if ( isset($nivel) && $nivel == 5) echo 'selected'; ?>>&#9733&#9733&#9733&#9733&#9733</option>
 						</select>
-						</div>
-						<div class="a">
+					</div>
+					<div class="a">
 						<button class="btn btn-primary" type="submit">Enviar</button>
-						</div>
+					</div>
 				</div>
 
 				</form>
