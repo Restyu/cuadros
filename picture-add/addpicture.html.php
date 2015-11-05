@@ -30,7 +30,6 @@
 						</thead>
 
 						<tbody>
-
 							<?php foreach($cuadros as $cad): ?>
 
 							<th><?=$cad['pintor']?></th>
@@ -43,9 +42,7 @@
 							<th><?=$cad['tema']?></th>
 							<th><?=$cad['nacionalidad']?></th>
 							<tr>
-
 							<?php endforeach; ?>
-							
 						</tbody>
 
 					</table>
@@ -104,10 +101,10 @@
 							<option value="4" <?php if ( isset($nivel) && $nivel == 4) echo 'selected'; ?>>&#9733&#9733&#9733&#9733</option>
 							<option value="5" <?php if ( isset($nivel) && $nivel == 5) echo 'selected'; ?>>&#9733&#9733&#9733&#9733&#9733</option>
 						</select>
-					</div>
-					<div class="a">
-						<button class="btn btn-primary" type="submit">Enviar</button>
-					</div>
+						</div>
+						<div class="a">
+							<button class="btn btn-primary" type="submit">Enviar</button>
+						</div>
 				</div>
 
 				</form>

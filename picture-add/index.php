@@ -83,7 +83,7 @@ if ( isset($_GET['addpicture'])) {
 
 // se extrae la informacion de la base de datos
 try{
-	$sql = 'SELECT * FROM pintores';
+	$sql = 'SELECT * FROM pintores where picturecreate IS NOT NULL';
 	$ps = $pdo->prepare($sql);
 	$ps->execute();
 

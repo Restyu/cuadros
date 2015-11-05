@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" type=".././text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href=".././css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-1 col-lg-10">
-				<div>
 					<div class="col-lg-offset-0 col-lg-10">
 						<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
 						<h2>Lista de cuadros</h2>
@@ -51,8 +50,15 @@
 
 								</tbody>
 						</table>
-				</div>
-			</div>
+					<div class="buttonlistpicture">	
+						<div class="newpicture">
+							<a class="btn btn-success" href="<?=$base_url?>/picture-add" role="button">Añadir cuadro</a>
+						</div>
+						<dic class="deletespicture">
+							<a class="btn btn-danger" href="<?=$base_url?>/picture-delete" role="button">Cuadros eliminados</a>
+						</dic>
+					</div>		
+			</div>	
 		</div>
 	</div>
 </body>

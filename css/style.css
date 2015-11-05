@@ -113,5 +113,13 @@ footer {
 	margin-top: 11px;
 }
 
+/* CSS DE LA PAGINA PICTURE-LIST */
 
+.buttonlistpicture{
+	text-align: right;
+}
+
+.newpicture , .deletespicture{
+	display: inline-block;
+}
 
