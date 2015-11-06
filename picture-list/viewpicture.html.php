@@ -9,10 +9,10 @@
 
 	<style>
 
-		h1 , h2 , a{
+		h1 , h2 , h3 , a{
 
 		font-family: "Pacifico";
-
+		
 		}
 	
 	</style>
@@ -22,10 +22,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-1 col-lg-10">
+				<div class="row">
 					<div class="col-lg-offset-0 col-lg-10">
 						<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
 						<h2>Lista de cuadros</h2>
 					</div>
+				</div>
+						<?php if (!empty($listacuadros)): ?>
+
 						<table class="table table-striped">	
 								
 								<thead>
@@ -39,12 +43,13 @@
 									<th>tecnica</th>
 									<th>tema</th>
 									<th>pais</th>
+									<th>Eliminar</th>
 
 								</thead>
 
 								<tbody>
-							
-									<?php foreach($listacuadros as $liscad): ?>
+
+								<?php foreach($listacuadros as $liscad): ?>
 
 									<th><?=$liscad['pintor']?></th>
 									<th><?=$liscad['cuadro']?></th>
@@ -55,14 +60,28 @@
 									<th><?=$liscad['tecnica']?></th>
 									<th><?=$liscad['tema']?></th>
 									<th><?=$liscad['nacionalidad']?></th>
+									
+									<th class="listicon">
+										<form action="?deletepicture" method="post">
+											<input type="hidden" name="id" value="<?=$eliminada['id']?>">
+											<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-trash"></i></button>
+										</form>
+									</th>
+
 
 									<tr>
 
-									<?php endforeach; ?>
-
+								<?php endforeach; ?>
+									
+							<?php else: ?>
+									
+									<h3>no hay cuadros registrados</h3>
+									
+							<?php endif ?>
 
 								</tbody>
 						</table>
+
 					<div class="buttonlistpicture">	
 						<div class="newpicture">
 							<a class="btn btn-success" href="<?=$base_url?>/picture-add" role="button">Añadir cuadro</a>
@@ -70,7 +89,8 @@
 						<dic class="deletespicture">
 							<a class="btn btn-danger" href="<?=$base_url?>/picture-delete" role="button">Cuadros eliminados</a>
 						</dic>
-					</div>		
+					</div>
+							
 			</div>	
 		</div>
 	</div>

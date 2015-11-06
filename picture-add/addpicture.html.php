@@ -9,7 +9,7 @@
 
 	<style>
 
-	h1 , h2 , button {
+	h1 , h2 , h3 , button {
 
 		font-family: "Pacifico";
 	}
@@ -22,10 +22,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-1 col-lg-10">
-				<div class="col-lg-offset-0 col-lg-10">
-					<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
-					<h2>Registro de cuadros</h2>
+				<div class="row">
+					<div class="col-lg-offset-0 col-lg-10">
+						<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
+						<h2>Registro de cuadros</h2>
+					</div>
 				</div>
+					<?php if (!empty($cuadros)) : ?>
+						
 					<table class="table table-striped">
 						
 						<thead>
@@ -56,6 +60,9 @@
 							<?php endforeach; ?>
 						</tbody>
 
+						<?php else: ?>
+							<h3>no hay cuadros registrados</h3>
+						<?php endif; ?>
 					</table>
 			</div>
 			

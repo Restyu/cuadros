@@ -14,6 +14,10 @@
 		font-family: "Pacifico";
 
 		}
+
+		h1 a:hover{
+			color: #edff8e;
+		}
 	
 	</style>
 
@@ -24,7 +28,7 @@
 			<div class="col-lg-offset-1 col-lg-10">
 					<div class="col-lg-offset-0 col-lg-10">
 						<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
-						<h2>Lista de cuadros</h2>
+						<h2>Lista de cuadros eliminados</h2>
 					</div>
 						<table class="table table-striped">	
 								
@@ -35,27 +39,26 @@
 									<th>año</th>
 									<th>&#9733</th>
 									<th>tamaño</th>
-									<th>soporte</th>
-									<th>tecnica</th>
-									<th>tema</th>
 									<th>pais</th>
+									<th>F.creado</th>
+									<th>F.borrado</th>
+									
 
 								</thead>
 
 								<tbody>
 							
-									<?php foreach($listacuadros as $liscad): ?>
+									<?php foreach($cuadroseliminados as $cuadlimit): ?>
 
-									<th><?=$liscad['pintor']?></th>
-									<th><?=$liscad['cuadro']?></th>
-									<th><?=$liscad['year']?></th>
-									<th><?=$liscad['puntuacion']?></th>
-									<th><?=$liscad['dimension']?></th>
-									<th><?=$liscad['soporte']?></th>
-									<th><?=$liscad['tecnica']?></th>
-									<th><?=$liscad['tema']?></th>
-									<th><?=$liscad['nacionalidad']?></th>
-
+									<th><?=$cuadlimit['pintor']?></th>
+									<th><?=$cuadlimit['cuadro']?></th>
+									<th><?=$cuadlimit['year']?></th>
+									<th><?=$cuadlimit['puntuacion']?></th>
+									<th><?=$cuadlimit['dimension']?></th>
+									<th><?=$cuadlimit['nacionalidad']?></th>
+									<th><?=$cuadlimit['picturecreate']?></th>
+									<th><?=$cuadlimit['picturedeletedat']?></th>
+									
 									<tr>
 
 									<?php endforeach; ?>
