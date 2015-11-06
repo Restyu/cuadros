@@ -50,9 +50,8 @@ table {
 
 
 html, body {
-	color: #282828;
-	height: 100%;
-	font-family: 'Montserrat', sans-serif;
+
+	font-family: 'Pacifico', sans-serif;
 }
 
 
@@ -88,8 +87,12 @@ footer {
 }
 
 .enlace{
-	font-size: 20px;
+	font-size: 25px;
 	color: #FFFFFF;
+}
+
+body a:hover{
+	color: #f8575d;
 }
 
 /* CSS DE LA PAGINA PICTURE-ADD */
@@ -115,6 +118,11 @@ footer {
 
 /* CSS DE LA PAGINA PICTURE-LIST */
 
+.listpicture{
+
+	background-color: #ff7969;
+}
+
 .buttonlistpicture{
 	text-align: right;
 }
@@ -122,4 +130,17 @@ footer {
 .newpicture , .deletespicture{
 	display: inline-block;
 }
+
+/* CSS DE LA PAGINA DELETE-PICTURE */
+
+.deletepicture{
+
+	background-color: #f8575d;
+}
+
+
+
+
+
+
 

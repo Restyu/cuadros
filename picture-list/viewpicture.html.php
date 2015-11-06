@@ -2,11 +2,23 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Lista de cuadros</title>
 	<link rel="stylesheet" type="text/css" href=".././css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+	<style>
+
+		h1 , h2 , a{
+
+		font-family: "Pacifico";
+
+		}
+	
+	</style>
+
 </head>
-<body>
+<body class="listpicture">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-1 col-lg-10">
@@ -43,6 +55,7 @@
 									<th><?=$liscad['tecnica']?></th>
 									<th><?=$liscad['tema']?></th>
 									<th><?=$liscad['nacionalidad']?></th>
+
 									<tr>
 
 									<?php endforeach; ?>
