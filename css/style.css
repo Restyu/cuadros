@@ -42,22 +42,23 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
+
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 
+/* CSS DE LA PAGINA DE INICIO */
 
-html, body {
+html, body{
 
 	font-family: 'Pacifico', sans-serif;
 }
 
+footer{
 
-/* HEADER */
-
-footer {
 	background-color: #282828;
 	position: absolute;
 	width: 100%;
@@ -65,9 +66,8 @@ footer {
 	color: #FFFFFF;
 }
 
-/* Section: HOME */
+.inicio{
 
-.inicio {
 	background: #FFF url('.././assets/meninas.jpg') no-repeat center center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -78,8 +78,8 @@ footer {
 	box-sizing: border-box;
 }
 
+.inicio h1{
 
-.inicio h1 {
 	padding-bottom: 5%;
 	font-size: 50px;
 	text-transform: uppercase;
@@ -87,11 +87,13 @@ footer {
 }
 
 .enlace{
+
 	font-size: 25px;
 	color: #FFFFFF;
 }
 
 body a:hover{
+
 	color: #f8575d;
 }
 
@@ -107,14 +109,17 @@ body a:hover{
 	margin-top: 11px;
 }
 
-.a{
+.puntuacionyenviar{
+
 	display: inline-block;
 }
 
-.b{
+.botones-abajo{
+
 	text-align: right;
 	margin-top: 11px;
 }
+
 
 /* CSS DE LA PAGINA PICTURE-LIST */
 
@@ -124,12 +129,20 @@ body a:hover{
 }
 
 .buttonlistpicture{
+
 	text-align: right;
 }
 
 .newpicture , .deletespicture{
+
 	display: inline-block;
 }
+
+.ordenar , .z{
+
+	display: inline-block;
+}
+
 
 /* CSS DE LA PAGINA DELETE-PICTURE */
 
@@ -137,10 +150,4 @@ body a:hover{
 
 	background-color: #f8575d;
 }
-
-
-
-
-
-
 

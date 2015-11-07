@@ -9,13 +9,14 @@
 
 	<style>
 
-		h1 , h2 , h3 , a{
+		h1 , h2 , h3 , a {
 
 		font-family: "Pacifico";
 
 		}
 
 		h1 a:hover{
+			
 			color: #edff8e;
 		}
 	
