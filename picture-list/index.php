@@ -21,13 +21,13 @@ while ($row = $ps->fetch(PDO::FETCH_ASSOC) ) {
 
 if (isset($_GET['deletepicture'])) {
 	
-	$id = $_POST['id'];
+	$idpicture = $_POST['idpicture'];
 
 	try {
 
-		$sql = 'UPDATE pintores set picturedeletedat = NOW() where id = id';
+		$sql = 'UPDATE pintores set picturedeletedat = NOW() where id = :idpicture';
 		$ps = $pdo->prepare($sql);
-		$ps->bindValue(':id', $id);
+		$ps->bindValue(':idpicture', $idpicture);
 		$ps->execute();
 		
 	} catch (Exception $e) {

@@ -7,6 +7,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	
 	<section class="inicio">
 		<h1>cuadros</h1>
 		<div class="enlaces">

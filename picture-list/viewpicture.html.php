@@ -63,7 +63,7 @@
 									
 									<th class="listicon">
 										<form action="?deletepicture" method="post">
-											<input type="hidden" name="id" value="<?=$eliminada['id']?>">
+											<input type="hidden" name="idpicture" value="<?=$liscad['id']?>">
 											<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-trash"></i></button>
 										</form>
 									</th>

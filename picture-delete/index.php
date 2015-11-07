@@ -22,4 +22,30 @@ while ($row = $ps->fetch(PDO::FETCH_ASSOC) ) {
 	$cuadroseliminados[] = $row;
 }
 
+
+if (isset($_GET['delete'])) {
+
+	$idpicture = $_POST['idpicture'];
+
+	try {
+	
+		$sql = 'DELETE FROM pintores where id = :idpicture';
+		$ps = $pdo->prepare($sql);
+		$ps->bindValue(':idpicture', $idpicture);
+		$ps->execute();
+
+	} catch (Exception $e) {
+
+		echo "no se ha podido borrar el cuadro";
+	}
+
+	header('Location: .');
+	exit();
+}
+
+
 require_once 'deletepicture.html.php';
+
+
+
+
