@@ -16,8 +16,14 @@
 		}
 
 		h1 a:hover{
-			
+
 			color: #edff8e;
+		}
+
+		.opciones{
+			
+			display: inline-block;
+			text-align: center;
 		}
 	
 	</style>
@@ -48,7 +54,7 @@
 								<th>pais</th>
 								<th>F.creado</th>
 								<th>F.borrado</th>
-								<th>Eliminar</th>
+								<th>resta / elimi</th>
 
 							</thead>
 
@@ -66,10 +72,18 @@
 								<th><?=$cuadlimit['picturedeletedat']?></th>
 
 								<th class="listicon">
+									<div class="opciones">
+									<form action="?restaurar" method="post">
+										<input type="hidden" name="idpicture" value="<?=$cuadlimit['id']?>">
+										<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-arrow-up"></i></button>
+									</form>
+									</div>
+									<div class="opciones">
 									<form action="?delete" method="post">
 										<input type="hidden" name="idpicture" value="<?=$cuadlimit['id']?>">
 										<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-trash"></i></button>
 									</form>
+									</div>
 								</th>
 									
 								<tr>

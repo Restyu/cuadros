@@ -43,6 +43,25 @@ if (isset($_GET['delete'])) {
 	exit();
 }
 
+if (isset($_GET['restaurar'])) {
+
+	$idpicture = $_POST['idpicture'];
+
+	try {
+	
+		$sql = 'UPDATE pintores set picturedeletedat = null where id = :idpicture';
+		$ps = $pdo->prepare($sql);
+		$ps->bindValue(':idpicture', $idpicture);
+		$ps->execute();
+
+	} catch (Exception $e) {
+
+		echo "no se ha podido borrar el cuadro";
+	}
+
+	header('Location: .');
+	exit();
+}
 
 require_once 'deletepicture.html.php';
 
