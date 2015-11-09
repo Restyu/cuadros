@@ -138,16 +138,49 @@ body a:hover{
 	display: inline-block;
 }
 
+.opciones{
+
+	display: inline-block;
+
+}
+
 .ordenar , .z{
 
 	display: inline-block;
 }
 
 
-/* CSS DE LA PAGINA DELETE-PICTURE */
+/* CSS DE LA PAGINA PICTURE-DELETE */
 
 .deletepicture{
 
 	background-color: #f8575d;
 }
+
+/* CSS DE LA PAGINA PICTURE-UPDATE */
+
+.updatepicture{
+
+	background-color: #ffb576;
+}
+
+.actualizar {
+
+	display: inline-block;
+		
+}
+	
+.actualizarbutton{
+
+	margin-top: 15px;
+}
+
+.formactualizar{
+
+	display: inline-block;
+}
+
+
+
+
 

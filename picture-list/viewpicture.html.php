@@ -26,6 +26,7 @@
 			padding-bottom: 10px;
 
 		}
+
 	
 	</style>
 
@@ -35,8 +36,7 @@
 			<div class="row">
 				<div class="col-lg-offset-1 col-lg-10">
 					<div class="row">
-						<div class="col-lg-offset-0 col-lg-12">
-							
+						<div class="col-lg-offset-0 col-lg-12">	
 							<div class="z">
 								<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
 								<h2>Lista de cuadros</h2>
@@ -109,10 +109,18 @@
 										<th><?=$liscad['nacionalidad']?></th>
 										
 										<th class="listicon">
-											<form action="?deletepicture" method="post">
-												<input type="hidden" name="idpicture" value="<?=$liscad['id']?>">
-												<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-trash"></i></button>
-											</form>
+											<div class="opciones">
+												<form action="?deletepicture" method="post">
+													<input type="hidden" name="idpicture" value="<?=$liscad['id']?>">
+													<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-trash"></i></button>
+												</form>
+											</div>
+											<div class="opciones">
+												<form action="../picture-update/" method="post">
+													<input type="hidden" name="idpicture" value="<?=$liscad['id']?>">
+													<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-pencil"></i></button>
+												</form>
+											</div>
 										</th>
 
 
