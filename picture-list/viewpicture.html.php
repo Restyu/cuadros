@@ -38,9 +38,12 @@
 					<div class="row">
 						<div class="col-lg-offset-0 col-lg-12">	
 							<div class="z">
-								<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
+								<h1><a href="<?=$base_url?>/index.php">Pinacotek</a></h1>
 								<h2>Lista de cuadros</h2>
 							</div>
+						
+
+						<?php if (!empty($listacuadros) && count($listacuadros) > 1): ?>	
 
 							<div class="z">
 								<div class="ordenar">
@@ -72,6 +75,9 @@
 									</form>
 								</div>
 							</div>
+							
+						<?php endif ?>
+
 						</div>
 					</div>
 
@@ -90,7 +96,7 @@
 										<th>tecnica</th>
 										<th>tema</th>
 										<th>pais</th>
-										<th>Opciones</th>
+										<th>borrar/modificar</th>
 
 									</thead>
 

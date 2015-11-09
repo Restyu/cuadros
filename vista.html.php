@@ -9,7 +9,7 @@
 <body>
 	
 	<section class="inicio">
-		<h1>cuadros</h1>
+		<h1>Pinacotek</h1>
 		<div class="enlaces">
 			<a class="enlace btn btn-default" href="<?=$base_url?>/picture-add" role="button">añadir nuevo cuadro</a>
 			<a class="enlace btn btn-default" href="<?=$base_url?>/picture-list" role="button">ver lista cuadros</a>
@@ -18,7 +18,7 @@
 	</section>
 
 	<footer>
-		aplicacion web sobre cuadros - 2015
+		aplicacion web  . Pinacotek  &copy; - 2015
 	</footer>
 
 </body>

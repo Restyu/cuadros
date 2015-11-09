@@ -22,7 +22,7 @@
 		<div class="row">
 			<div class="col-lg-offset-1 col-lg-10">
 				
-				<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
+				<h1><a href="<?=$base_url?>/index.php">Pinacotek</a></h1>
 				<h2>Actualizar cuadros</h2>
 				
 				<div class="formactualizar">	

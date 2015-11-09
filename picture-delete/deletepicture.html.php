@@ -35,7 +35,7 @@
 			<div class="col-lg-offset-1 col-lg-10">
 					<div class="row">
 						<div class="col-lg-offset-0 col-lg-10">
-							<h1><a href="<?=$base_url?>/index.php">Cuadros</a></h1>
+							<h1><a href="<?=$base_url?>/index.php">Pinacotek</a></h1>
 							<h2>Lista de cuadros eliminados</h2>
 						</div>
 					</div>
@@ -53,6 +53,7 @@
 								<th>tamaño</th>
 								<th>pais</th>
 								<th>F.creado</th>
+								<th>F.modificado</th>
 								<th>F.borrado</th>
 								<th>resta / elimi</th>
 
@@ -69,6 +70,7 @@
 								<th><?=$cuadlimit['dimension']?></th>
 								<th><?=$cuadlimit['nacionalidad']?></th>
 								<th><?=$cuadlimit['picturecreate']?></th>
+								<th><?=$cuadlimit['picturedoneat']?></th>
 								<th><?=$cuadlimit['picturedeletedat']?></th>
 
 								<th class="listicon">
