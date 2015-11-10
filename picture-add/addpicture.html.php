@@ -78,42 +78,91 @@
 					<div class="registro input-group input-group-sm">
 					  <span class="input-group-addon" id="sizing-addon2">pintor</span>
 					  <input type="text" class="form-control" name="pintor" placeholder="Introduce el pintor:" aria-describedby="sizing-addon3" value="<?php if (isset($pintor)) echo $pintor; ?>">
-					</div>
+					  </div>
+					  	<?php if( isset($errores['pintor']) ): ?>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+				 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				 			Debes introducir el nombre pintor
+							</div>
+						<?php endif; ?>
+					
 
 					<div class="registro input-group input-group-sm">
 					  <span class="input-group-addon" id="sizing-addon2">cuadro</span>
 					  <input type="text" class="form-control" name="cuadro" placeholder="Introduce el nombre del cuadro" aria-describedby="sizing-addon3" value="<?php if (isset($cuadro)) echo $cuadro; ?>">
 					</div>
+					<?php if( isset($errores['cuadro']) ): ?>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+				 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				 			Debes introducir el nombre del cuadro
+							</div>
+						<?php endif; ?>
 
 					<div class="registro input-group input-group-sm">
 					  <span class="input-group-addon" id="sizing-addon1">año</span>
 					  <input type="text" class="form-control" name="year" placeholder="Año en el que fue pintado" aria-describedby="sizing-addon3" value="<?php if (isset($year)) echo $year; ?>">
 					</div>
+					<?php if( isset($errores['year']) ): ?>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+				 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				 			Debes introducir el año del cuadro
+							</div>
+						<?php endif; ?>
 
 					<div class="registro input-group input-group-sm">
 					  <span class="input-group-addon" id="sizing-addon3">dimension</span>
 					  <input type="text" class="form-control" name="dimension" placeholder="Dimensiones en cm" aria-describedby="sizing-addon3" value="<?php if (isset($dimension)) echo $dimension; ?>">
 					</div>
+					<?php if( isset($errores['dimension']) ): ?>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+				 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				 			Debes introducir las dimensiones del cuadro
+							</div>
+						<?php endif; ?>
 
 					<div class="registro input-group input-group-sm">
 					  <span class="input-group-addon" id="sizing-addon3">soporte</span>
 					  <input type="text" class="form-control" name="soporte" placeholder="lienzo , papel" aria-describedby="sizing-addon3" value="<?php if (isset($soporte)) echo $soporte; ?>">
 					</div>
+					<?php if( isset($errores['soporte']) ): ?>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+				 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				 			Debes introducir el soporte
+							</div>
+						<?php endif; ?>
 
 					<div class="registro input-group input-group-sm">
 					  <span class="input-group-addon" id="sizing-addon3">tecnica</span>
 					  <input type="text" class="form-control" name="tecnica" placeholder="oleo , aquarela" aria-describedby="sizing-addon3" value="<?php if (isset($tecnica)) echo $tecnica; ?>">
 					</div>
+					<?php if( isset($errores['tecnica']) ): ?>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+				 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				 			Debes introducir la tecnica
+							</div>
+						<?php endif; ?>
 
 					<div class="registro input-group input-group-sm">
 					  <span class="input-group-addon" id="sizing-addon3">tema</span>
 					  <input type="text" class="form-control" name="tema" placeholder="Tematica" aria-describedby="sizing-addon3" value="<?php if (isset($tema)) echo $tema; ?>">
 					</div>
+					<?php if( isset($errores['tema']) ): ?>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+				 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				 			Debes introducir el tema del cuadro
+							</div>
+						<?php endif; ?>
 
 					<div class="registro input-group input-group-sm">
 					  <span class="input-group-addon" id="sizing-addon3">pais</span>
 					  <input type="text" class="form-control" name="nacionalidad" placeholder="Pais pintor" aria-describedby="sizing-addon3" value="<?php if (isset($pais)) echo $pais; ?>">
 					</div>
+					<?php if( isset($errores['pais']) ): ?>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+				 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				 			Debes introducir la nacionlidad del pintor
+							</div>
+						<?php endif; ?>
 					
 					<div class="botones-abajo">
 						
